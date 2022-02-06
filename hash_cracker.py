@@ -92,8 +92,10 @@ def make_lists(wordlist_location, n_threads):
     return lists
 
 
-def run_threads(configs):
+def run_threads(configs, timer=True):
     global flag
+    if timer:
+        start = time.time()
     hash_input = configs["hash_input"]
     hash_type = configs["hash_type"]
     wordlist_location = configs["wordlist_location"]
@@ -110,6 +112,11 @@ def run_threads(configs):
         print("no matches found")
     cmd = "rm -rf /tmp/hc_wordlists"
     os.system(cmd)
+
+    if timer:
+        finish = time.time()
+        time_elapsed = finish - start
+        print("%.2f seconds" % time_elapsed)
     exit(0)
 
 
