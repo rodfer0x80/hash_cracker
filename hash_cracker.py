@@ -122,5 +122,4 @@ def run_threads(configs, timer=True):
 
 if __name__ == '__main__':
     configs = setup()
-    # make 4 threads, split list in 4 and crack
     run_threads(configs)
