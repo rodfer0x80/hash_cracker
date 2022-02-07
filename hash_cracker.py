@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# Requirements: Python3 STD Library
+# License: GPL3
+# Author: trevalkov
+
 
 import threading, hashlib, time, sys, os 
 
