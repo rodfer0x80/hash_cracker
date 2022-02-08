@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 
+#---------------------------------------------#
+# Dependencies: 0 (Standard Python3 Library)
+# License: GPL3
+# Author: trevalkov
+#---------------------------------------------#
 import threading, hashlib, time, sys, os 
 
 
